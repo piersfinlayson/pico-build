@@ -105,8 +105,8 @@ make -C ports/rp2 -j 4 BOARD=RPI_PICO_W
 if [ ! -e "~/.bashrc" ]; then
   touch ~/.bashrc
 fi
-echo "PICO_SDK_PATH=${INSTALL_DIR}/pico-sdk" >> ~/.bashrc
-echo "PICO_TOOLCHAIN_PATH=${INSTALL_DIR}/arm-gnu-toolchain" >> ~/.bashrc
+echo "export PICO_SDK_PATH=${INSTALL_DIR}/pico-sdk" >> ~/.bashrc
+echo "export PICO_TOOLCHAIN_PATH=${INSTALL_DIR}/arm-gnu-toolchain" >> ~/.bashrc
 
 # Finished
 printf "Installed:"

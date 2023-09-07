@@ -14,6 +14,25 @@ To install directly:
 ./install-pico-build.sh <install-dir> # install-dir is where you want everything installed, such as ~/builds
 ```
 
+The pico-sdk is located at:
+
+```
+<install-dir>/pico-sdk
+```
+
+The ARM GNU toolchain is:
+
+```
+<install-dir>/arm-gnu-toolchain
+```
+
+Both PICO_SDK_PATH and PICO_TOOLCHAIN_PATH are set up in .bashrc by this script, but if you need to export manually:
+
+```
+export PICO_SDK_PATH=<install-dir>/pico-sdk
+export PICO_TOOLCHAIN_PATH=<install-dir>/arm-gnu-toolchain
+```
+
 ## Container Image
 
 To create a container image:
